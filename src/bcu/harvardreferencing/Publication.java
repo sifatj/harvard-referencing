@@ -3,11 +3,22 @@ package bcu.harvardreferencing;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * 
+ * @author Andrew Kay
+ *
+ */
 public class Publication {
     private final List<Author> authors;
     private final String title;
     private final int year;
     
+    /**
+     * 
+     * @param authors
+     * @param title
+     * @param year
+     */
     public Publication(List<Author> authors, String title, int year) {
         if(authors.isEmpty()) {
             throw new IllegalArgumentException("Empty authors list");
@@ -18,10 +29,19 @@ public class Publication {
         this.year = year;
     }
     
+    
+    /**
+     * 
+     * @return a list of authors (do i mention it is unmodifiable?)
+     */
     public List<Author> getAuthors() {
         return Collections.unmodifiableList(authors);
     }
     
+    /**
+     * 
+     * @return the title of the publication
+     */
     public String getTitle() {
         return title;
     }

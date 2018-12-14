@@ -15,14 +15,27 @@ public class WebPage extends Publication {
         this.dateAccessed = dateAccessed;
     }
     
+    /**
+     * 
+     * @return the url of the webpage
+     */
     public String getURL() {
         return url;
     }
     
+    /**
+     * 
+     * @return the last accessed date
+     */
     public String getDateAccessed() {
         return dateAccessed;
     }
     
+    /**
+     * harvard ref in the format
+     * 
+     * @return the harvard reference of the webpage
+     */
     @Override
     public String harvardReference() {
         String reference = super.harvardReference();

@@ -2,6 +2,11 @@ package bcu.harvardreferencing;
 
 import java.util.List;
 
+/**
+ * 
+ * @author Andrew Kay
+ *
+ */
 public class JournalArticle extends Publication {
     private final String journalName;
     private final int volume;
@@ -9,6 +14,17 @@ public class JournalArticle extends Publication {
     private final int pageFrom;
     private final int pageTo;
     
+    /**
+     * 
+     * @param authors
+     * @param title
+     * @param year the year of publication
+     * @param journalName 
+     * @param volume
+     * @param issue
+     * @param pageFrom
+     * @param pageTo
+     */
     public JournalArticle(
         List<Author> authors, String title, int year,
         String journalName, int volume, int issue, int pageFrom, int pageTo
@@ -21,10 +37,19 @@ public class JournalArticle extends Publication {
         this.pageTo = pageTo;
     }
     
+    /**
+     * 
+     * 
+     * @return the name of the journal
+     */
     public String getJournalName() {
         return journalName;
     }
     
+    /**
+     * 
+     * @return the volume number of the journal
+     */
     public int getVolume() {
         return volume;
     }
